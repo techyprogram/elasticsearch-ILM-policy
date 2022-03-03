@@ -35,4 +35,8 @@ Elasticsearch ILM Policy file
 
     This policy is for rolling over the indices when age of the index or document count or size reaches configurable.
     As per the configuration, if the index reaches 1 day or 10000 count or 500mb the index would be rolled over.
+    
+
+This all file also contains the transition to warm layer after 1 hour of the rolling over the indices.
+In warm layer we change the number of the shards to 1.
 
